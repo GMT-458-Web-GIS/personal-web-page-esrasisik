@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif; /* Font type Arial */
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1; /* Background color changed */
+    line-height: 1.6; /* Increased line height */
+}
+
+header {
+    background-color: #2C3E50; /* Main color changed */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Increased heading size */
+    margin: 0; /* Margin reset */
+    letter-spacing: 1px; /* Letter spacing */
+    color: #E74C3C; /* Accent color added */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Color transition added */
+}
+
+nav ul li a:hover {
+    color: #E74C3C; /* Accent color on hover */
+}
+
+main {
+    padding: 10px; /* Reduced padding to decrease space */
+    text-align: center;
+}
+
+h2 {
+    color: #2980B9; /* Changed heading color */
+    margin-bottom: 10px; /* Reduced bottom margin */
+    font-size: 2em; /* Increased heading size */
+    font-weight: bold; /* Bold text */
+}
+
+h3, h4 {
+    color: #34495E; /* Changed subtitle color */
+    font-weight: bold; /* Bold text */
+    margin: 10px 0; /* Margin set for headings */
+}
+
+.field-work {
+    padding: 10px; /* Reduced padding to decrease space */
+}
+
+.field-work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 photos in each row */
+    gap: 10px; /* Space between photos */
+    justify-items: center; /* Center photos */
+}
+
+.field-work-item {
+    width: 250px; /* New width */
+    height: 250px; /* New height for square appearance */
+    border: 2px solid #34495E; /* Dark blue-grey border */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.field-work-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.field-work-item img {
+    width: 100%;
+    height: 100%; /* Height set to 100% for square appearance */
+    object-fit: cover; /* Ensures image fits without being distorted */
+}
+
+.compass-container {
+    margin: 10px 0; /* Reduced margin */
+    font-size: 50px;
+    color: #E74C3C; /* Accent color used */
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin: 10px 0; /* Reduced margin */
+}
+
+.contact-info {
+    background-color: #E74C3C; /* Accent color background */
+    padding: 15px; /* Reduced padding to decrease space */
+    margin: 10px auto; /* Reduced margin */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    margin-bottom: 5px; /* Reduced bottom margin */
+    font-weight: bold; /* Bold text */
+}
+
+footer {
+    background-color: #2C3E50; /* Main color changed */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto; /* Reduced top margin */
+}
+
+.table-container h3, .table-container h4 {
+    margin-bottom: 5px; /* Reduced bottom margin for headings */
+}
+
+.table-container p {
+    margin-bottom: 5px; /* Reduced space in the description section */
+    font-size: 1.1em; /* Increased font size */
+}
+
+table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 10px; /* Reduced space between table and previous content */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 5px; /* Reduced space in content area */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    padding: 8px; /* Adjusted padding for headers */
+    font-weight: bold; /* Bold text */
+}

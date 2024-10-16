@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şahan Harita Mühendislik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Responsive style for table */
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px auto;
+        }
+        table {
+            width: 80%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Better appearance for mobile devices */
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+            td {
+                border: none;
+                padding-left: 50%;
+                position: relative;
+            }
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+            }
+        }
+        /* Style for image */
+        .image-container {
+            text-align: center; /* To center the image */
+            margin: 20px 0; /* Top and bottom space */
+        }
+        img {
+            max-width: 100%; /* Resize image to container */
+            height: auto; /* Keep the proportion */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Şahan Harita Mühendislik Bürosu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="technologies.html">Teknolojiler</a></li>
+                <li><a href="projects.html">Projeler</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Hoş Geldiniz</h2>
+        <p>Şahan Harita Mühendislik, çeşitli harita mühendisliği projeleri ve teknolojileriyle hizmetinizdedir.</p>
+
+        <div class="image-container">
+            <img src="images/images.jfif" alt="Harita Mühendislik Görseli">
+        </div>
+
+        <div class="compass-container">
+            <i class="fa-sharp fa-solid fa-compass-drafting"></i>
+        </div>
+
+        <div id="map" class="map"></div>
+
+        <!-- Technologies We Use Section -->
+        <section class="table-container">
+            <h3>Kullandığımız Teknolojiler</h3>
+            <p>Şahan Harita, en güncel harita yazılımları ve ölçüm ekipmanlarını kullanır.</p>
+            
+            <h4>Yazılımlar</h4>
+            <table>
+                <tr>
+                    <th>Yazılım</th>
+                    <th>Açıklama</th>
+                </tr>
+                <tr>
+                    <td>AutoCAD</td>
+                    <td>Teknik çizim ve haritalama.</td>
+                </tr>
+                <tr>
+                    <td>ArcGIS</td>
+                    <td>Coğrafi bilgi sistemi analizleri.</td>
+                </tr>
+                <tr>
+                    <td>NetCAD</td>
+                    <td>Harita çizimi ve parselasyon.</td>
+                </tr>
+            </table>
+
+            <h4>Ölçüm Cihazları</h4>
+            <table>
+                <tr>
+                    <th>Cihaz</th>
+                    <th>Açıklama</th>
+                </tr>
+                <tr>
+                    <td>Total Station</td>
+                    <td>Açısal ve mesafe ölçümleri için.</td>
+                </tr>
+                <tr>
+                    <td>GPS</td>
+                    <td>Konum belirleme için.</td>
+                </tr>
+                <tr>
+                    <td>Nivo</td>
+                    <td>Nivolama işlemleri için.</td>
+                </tr>
+                <tr>
+                    <td>Drone</td>
+                    <td>Havadan görüntüleme için.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Address Information Section -->
+    <section class="contact-info">
+        <h3>Adres Bilgimiz</h3>
+        <p>Şahan Harita Mühendislik Bürosu</p>
+        <p>Yeşilyurt Mah. Abdurrahman Nazım Kaynak Cad.</p>
+        <p>Afşin/KAHRAMANMARAŞ</p> 
+        <p>Telefon: +90 544 430 46 03</p>
+        <p>E-posta: <a href="mailto:sahanharita46@gmail.com">sahanharita46@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Şahan Harita Mühendislik</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ol/7.4.0/ol.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
